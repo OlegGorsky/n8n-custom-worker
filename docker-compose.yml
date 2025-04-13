@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: n8n_worker_custom
     restart: unless-stopped
-    command: worker
+    command: n8n worker
     environment:
       - N8N_DISABLE_UI=true
       - EXECUTIONS_MODE=queue
